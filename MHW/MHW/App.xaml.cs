@@ -13,7 +13,7 @@ namespace MHW
 		{
 			InitializeComponent();
 
-			MainPage = new MHW.MainPage();
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
