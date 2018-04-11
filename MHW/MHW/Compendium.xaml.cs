@@ -16,5 +16,9 @@ namespace MHW
 		{
 			InitializeComponent ();
 		}
+        public void SQLiteSearch(object Sender,EventArgs e)
+        {
+
+        }
 	}
 }

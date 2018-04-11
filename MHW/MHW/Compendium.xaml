@@ -4,7 +4,9 @@
              x:Class="MHW.Compendium">
 
     <StackLayout Orientation="Vertical">
-        <SearchBar x:Name="SQLiteSearchBar"/>
-        <ListView x:Name="SuggestionsListView"/>
+        <SearchBar x:Name="SQLiteSearchBar"
+                   SearchButtonPressed="SQLiteSearch"/>
+        
+        <ListView x:Name="SQLiteListView"/>
     </StackLayout>
 </ContentPage>

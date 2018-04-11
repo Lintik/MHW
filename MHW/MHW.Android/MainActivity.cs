@@ -15,11 +15,6 @@ namespace MHW.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
-
-            base.OnCreate(bundle);
-
             //Initialize MHWDB.db
             string targetPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             var path = Path.Combine(targetPath, "MHWDB.db");
@@ -34,6 +29,11 @@ namespace MHW.Droid
                     }
                 }
             }
+
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
+
+            base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(path));
