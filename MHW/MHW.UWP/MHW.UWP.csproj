@@ -101,6 +101,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Assets\MHWDB.db" />
     <None Include="MHW.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

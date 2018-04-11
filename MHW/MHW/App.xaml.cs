@@ -4,22 +4,35 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using SQLite;
+using System.Diagnostics;
 
 namespace MHW
 {
 	public partial class App : Application
 	{
-		public App ()
+   
+
+        public App (string dbPath)
 		{
 			InitializeComponent();
 
 			MainPage = new NavigationPage(new MainPage());
-		}
 
-		protected override void OnStart ()
+        }
+
+        public App()
+        {
+            InitializeComponent();
+
+            MainPage = new NavigationPage(new MainPage());
+
+        }
+
+        protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            // Handle when your app starts
+        }
 
 		protected override void OnSleep ()
 		{

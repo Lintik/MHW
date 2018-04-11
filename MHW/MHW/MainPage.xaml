@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MHW"
              x:Class="MHW.MainPage">
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="DB"
                      Activated="DB_Activated"
                      />
     </ContentPage.ToolbarItems>
+
+    <StackLayout Margin="10,10,10,0"
+                 Orientation="Vetical">
+        <Entry/>
+    </StackLayout>
 
 </ContentPage>

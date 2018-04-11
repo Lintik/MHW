@@ -19,9 +19,10 @@ namespace MHW.UWP
     {
         public MainPage()
         {
+            var path = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, @"Assets\MHWDB.db");
             this.InitializeComponent();
 
-            LoadApplication(new MHW.App());
+            LoadApplication(new MHW.App(path));
         }
     }
 }

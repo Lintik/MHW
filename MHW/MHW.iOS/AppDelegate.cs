@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,8 +23,22 @@ namespace MHW.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            // Initialize MHWDB.db
+            var targetPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            targetPath = Path.Combine(targetPath, "..", "Library");
+
+            var path = Path.Combine(targetPath, "MHWDB.db");
+            if (!File.Exists(path))
+            {
+                var bundlePath = NSBundle.MainBundle.PathForResource(
+                    "MHWDB",
+                    "db"
+                );
+                File.Copy(bundlePath, path);
+            }
+
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            LoadApplication(new App(path));
 
             return base.FinishedLaunching(app, options);
         }
