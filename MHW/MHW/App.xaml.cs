@@ -11,13 +11,15 @@ namespace MHW
 {
 	public partial class App : Application
 	{
-   
 
-        public App (string dbPath)
+        public static string DBPath = "";
+        public App (string path)
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new MainPage());
+            DBPath = path;
+
+            MainPage = new NavigationPage(new MainPage());
 
         }
 

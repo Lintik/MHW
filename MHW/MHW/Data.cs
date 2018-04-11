@@ -9,6 +9,7 @@ namespace MHW
     {
         [PrimaryKey]
         public string name { get; set; }
+        [NotNull]
         public string set { get; set; }
     }
 }

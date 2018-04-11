@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,16 +10,26 @@ using Xamarin.Forms.Xaml;
 
 namespace MHW
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Compendium : ContentPage
-	{
-		public Compendium ()
-		{
-			InitializeComponent ();
-		}
-        public void SQLiteSearch(object Sender,EventArgs e)
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Compendium : ContentPage
+    {
+        public Compendium()
         {
-
+            InitializeComponent();
         }
-	}
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DBPath))
+            {
+                conn.CreateTable<Armor>();
+
+                var equip = conn.Table<Armor>().ToList();
+                SQLiteListView.ItemsSource = equip;
+            }
+        }
+    }
+
+
 }

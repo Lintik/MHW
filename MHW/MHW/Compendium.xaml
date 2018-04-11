@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MHW.Compendium">
 
-    <StackLayout Orientation="Vertical">
-        <SearchBar x:Name="SQLiteSearchBar"
-                   SearchButtonPressed="SQLiteSearch"/>
-        
-        <ListView x:Name="SQLiteListView"/>
-    </StackLayout>
+    <ListView x:Name="SQLiteListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding name}"
+                          Detail="{Binding set}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+              
 </ContentPage>
