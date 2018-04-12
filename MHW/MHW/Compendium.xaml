@@ -7,7 +7,7 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding name}"
-                          Detail="{Binding set}"/>
+                          Detail="{Binding armorSet}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

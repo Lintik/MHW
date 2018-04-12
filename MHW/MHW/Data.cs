@@ -10,8 +10,8 @@ namespace MHW
     public class Armor
     {
         [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
+        public int id { get; set; }
         public string name { get; set; }
-        public string set { get; set; }
+        public string armorSet { get; set; }
     }
 }
