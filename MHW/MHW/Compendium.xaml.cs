@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+#pragma warning disable 0436
+
 namespace MHW
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -21,6 +23,7 @@ namespace MHW
         protected override void OnAppearing()
         {
             base.OnAppearing();
+
             using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DBPath))
             {
                 conn.CreateTable<Armor>();
