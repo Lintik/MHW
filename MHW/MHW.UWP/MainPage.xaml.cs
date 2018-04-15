@@ -24,7 +24,7 @@ namespace MHW.UWP
         {
             this.InitializeComponent();
 
-            string dbPath = FileAccessHelper.GetLocalFilePath("MHWDB,db");
+            string dbPath = FileAccessHelper.GetLocalFilePath("MHWDB.db");
             LoadApplication(new MHW.App(dbPath));
         }
 
