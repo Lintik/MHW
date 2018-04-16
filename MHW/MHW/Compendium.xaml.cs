@@ -21,6 +21,7 @@ namespace MHW
             InitializeComponent();
         }
 
+        
         protected override void OnAppearing()
         {
             base.OnAppearing();
