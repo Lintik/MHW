@@ -17,18 +17,18 @@ namespace MHW.UWP
             string path = ApplicationData.Current.LocalFolder.Path;
             string dbPath = Path.Combine(path, filename);
 
-            CopyDatabaseIfNotExists(dbPath);
+            //CopyDatabaseIfNotExists(dbPath);
 
             return dbPath;
         }
         
-        public async static void CopyDatabaseIfNotExists(string dbPath)
-        {
-            if (!File.Exists(dbPath))
-            {
-                StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-                StorageFile sampleFile = await storageFolder.CreateFileAsync("MHWDB.db", CreationCollisionOption.ReplaceExisting);
-            }
-        }
+        //public async static void CopyDatabaseIfNotExists(string dbPath)
+        //{
+        //    if (!File.Exists(dbPath))
+        //    {
+        //        StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+        //        StorageFile sampleFileCreate = await storageFolder.CreateFileAsync("MHWDB.db", CreationCollisionOption.ReplaceExisting);
+        //    }
+        //}
     }
 }
