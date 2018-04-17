@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -21,7 +22,12 @@ namespace MHW
             InitializeComponent();
         }
 
-        
+        private void SearchSQLite(object sender, EventArgs e)
+        {
+            var keyword = MainSearchBar.Text;
+        }
+
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -31,7 +37,7 @@ namespace MHW
                 conn.CreateTable<Armor>();
 
                 var equip = conn.Table<Armor>().ToList();
-                SQLiteListView.ItemsSource = equip;
+                MHWDBListView.ItemsSource = equip;
             }
         }
     }

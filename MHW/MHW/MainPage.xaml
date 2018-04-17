@@ -10,9 +10,4 @@
                      />
     </ContentPage.ToolbarItems>
 
-    <StackLayout Orientation="Vertical">
-   
-        <Entry/>
-    </StackLayout>
-
 </ContentPage>

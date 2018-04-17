@@ -14,7 +14,7 @@ namespace MHW.UWP
     {
         public static string GetLocalFilePath(string filename)
         {
-            string path = Windows.Storage.ApplicationData.Current.LocalFolder.Path;
+            string path = ApplicationData.Current.LocalFolder.Path;
             string dbPath = Path.Combine(path, filename);
 
             CopyDatabaseIfNotExists(dbPath);

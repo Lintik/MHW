@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MHW.Compendium">
 
-    <ListView x:Name="SQLiteListView">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell Text="{Binding name}"
-                          Detail="{Binding armorSet}"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-              
+    <StackLayout>
+        <SearchBar x:Name="MainSearchBar" 
+                   SearchButtonPressed="SearchMHWDB"/>
+        <ListView x:Name="MHWDBListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding name}"
+                              Detail="{Binding armorSet}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
 </ContentPage>
