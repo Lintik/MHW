@@ -13,9 +13,10 @@ namespace MHW
 		{
 			InitializeComponent();
 		}
-        public void DB_Activated(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Compendium());
-        }
+		
+		public void DB_Activated(object sender, EventArgs e)
+		{
+		    Navigation.PushAsync(new Compendium());
+		}
 	}
 }
