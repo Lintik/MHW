@@ -22,7 +22,7 @@ namespace MHW
             InitializeComponent();
         }
 
-        private void SearchSQLite(object sender, EventArgs e)
+        private void SearchMHWDB(object sender, EventArgs e)
         {
             var keyword = MainSearchBar.Text;
         }
