@@ -4,9 +4,9 @@
     {
         public MainPage()
         {
+            string dbPath = FileAccessHelper.GetLocalFilePath("MHWDB.db3");
             this.InitializeComponent();
 
-            string dbPath = FileAccessHelper.GetLocalFilePath("MHWDB.db");
             LoadApplication(new MHW.App(dbPath));
         }
     }

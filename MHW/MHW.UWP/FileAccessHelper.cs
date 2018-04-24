@@ -14,21 +14,8 @@ namespace MHW.UWP
     {
         public static string GetLocalFilePath(string filename)
         {
-            string path = ApplicationData.Current.LocalFolder.Path;
-            string dbPath = Path.Combine(path, filename);
-
-            //CopyDatabaseIfNotExists(dbPath);
-
-            return dbPath;
+            string path = Path.Combine(Windows.ApplicationModel.Package.Current.InstalledLocation.Path, @"Assets\"+filename);
+            return path;
         }
-        
-        //public async static void CopyDatabaseIfNotExists(string dbPath)
-        //{
-        //    if (!File.Exists(dbPath))
-        //    {
-        //        StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-        //        StorageFile sampleFileCreate = await storageFolder.CreateFileAsync("MHWDB.db", CreationCollisionOption.ReplaceExisting);
-        //    }
-        //}
     }
 }

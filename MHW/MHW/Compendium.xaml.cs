@@ -10,8 +10,6 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SQLite;
 
-#pragma warning disable 0436
-
 namespace MHW
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -41,6 +39,4 @@ namespace MHW
             }
         }
     }
-
-
 }  
