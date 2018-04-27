@@ -17,11 +17,11 @@ namespace MHW.Droid
         {
             //Initialize MHWDB.db
             string targetPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            var path = Path.Combine(targetPath, "MHWDB.db");
+            var path = Path.Combine(targetPath, "MHWDB.db3");
 
             if (!File.Exists(path))
             {
-                using (Stream input = Assets.Open("MHWDB.db"))
+                using (Stream input = Assets.Open("MHWDB.db3"))
                 {
                     using (var fs = new FileStream(path, FileMode.Create))
                     {

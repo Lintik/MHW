@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\MHWDB.db" />
+    <AndroidAsset Include="Assets\MHWDB.db3" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>

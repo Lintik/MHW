@@ -3,15 +3,36 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 
-#pragma warning disable 0436
-
 namespace MHW
 {
     public class Armor
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int id { get; set; }
         public string name { get; set; }
-        public string armorSet { get; set; }
+        public string armorset { get; set; }
+        public string part { get; set; }
+        public int slot1 { get; set; }
+        public int slot2 { get; set; }
+        public int slot3 { get; set; }
+        public string att0 { get; set; }
+        public string att1 { get; set; }
+        public string mat1 { get; set; }
+        public string mat2 { get; set; }
+        public string mat3 { get; set; }
+        public string mat4 { get; set; }
+    }
+
+    public class ArmorSet
+    {
+        [PrimaryKey]
+        public string armorset { get; set; }
+        public int rank { get; set; }
+        public int def { get; set; }
+        public int fire { get; set; }
+        public int water { get; set; }
+        public int thunder { get; set; }
+        public int ice { get; set; }
+        public int dragon { get; set; }
     }
 }

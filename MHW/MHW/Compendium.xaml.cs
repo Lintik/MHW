@@ -23,6 +23,14 @@ namespace MHW
         private void SearchMHWDB(object sender, EventArgs e)
         {
             var keyword = MainSearchBar.Text;
+
+            using (var conn = new SQLiteConnection(App.DBPath))
+            {
+                conn.CreateTable<Armor>();
+
+                var equip = conn.Query<Armor>("select * from Armor where lower(name) like ?","%" + keyword.ToLower() + "%").ToList();
+                MHWDBListView.ItemsSource = equip;
+            }
         }
 
 

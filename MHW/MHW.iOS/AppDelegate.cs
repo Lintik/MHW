@@ -27,12 +27,12 @@ namespace MHW.iOS
             var targetPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             targetPath = Path.Combine(targetPath, "..", "Library");
 
-            var path = Path.Combine(targetPath, "MHWDB.db");
+            var path = Path.Combine(targetPath, "MHWDB.db3");
             if (!File.Exists(path))
             {
                 var bundlePath = NSBundle.MainBundle.PathForResource(
                     "MHWDB",
-                    "db"
+                    "db3"
                 );
                 File.Copy(bundlePath, path);
             }

@@ -94,6 +94,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\MHWDB.db" />
+    <BundleResource Include="Resources\MHWDB.db3" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

@@ -104,8 +104,8 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="Assets\MHWDB.db3" />
     <None Include="MHW.UWP_TemporaryKey.pfx" />
-    <Content Include="Assets\MHWDB.db3" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Default.rd.xml" />
