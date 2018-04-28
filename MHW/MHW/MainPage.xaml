@@ -7,7 +7,24 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="DB"
                      Activated="DB_Activated"
+                     
                      />
     </ContentPage.ToolbarItems>
 
+    <StackLayout>
+        <Entry x:Name="EquipmentKeyword"
+               Placeholder="Search Equipment">
+
+        </Entry>
+        <Button Text="Search"
+            Clicked="SearchSelected">
+
+        </Button>
+        <Label x:Name="ToBeEquip"
+            />
+        <Button Text="Equip"
+                Clicked="EquipSelected">
+
+        </Button>
+    </StackLayout>
 </ContentPage>
