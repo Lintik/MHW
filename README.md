@@ -1,2 +1,2 @@
-Monster Hunter World Offline Databse
+Monster Hunter World Mobile Database
 
