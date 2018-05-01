@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MHW"
              x:Class="MHW.MainPage">
-
+    <!-- Navigation Page -->
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="DB"
                      Activated="DB_Activated"
@@ -11,20 +11,82 @@
                      />
     </ContentPage.ToolbarItems>
 
-    <StackLayout>
-        <Entry x:Name="EquipmentKeyword"
-               Placeholder="Search Equipment">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Search-->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Entry Placeholder="Search Equipment"
+                   x:Name="ToBeSearch"
+                   Grid.Column="0"
+                   Style="{StaticResource SmallTextSize}"/>
+            <Button Text="+"
+                    Grid.Column="1"
+                    Clicked="SearchSelected"/>
+        </Grid>
+        
+        <!--Equip-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="ToBeEquip"
+                   Grid.Column="0"
+                   Style="{StaticResource SmallTextSize}"/>
+            <Button Text="->"
+                    Grid.Column="1"
+                    Clicked="EquipSelected"/>
+        </Grid>
+        
+        <!--Equipment and Skills-->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0"
+                         Margin="10,0,0,0">
+                <Label Text="Equipment"
+                       />
+                <Label x:Name="Head"
+                       Text="Vangis Helm Beta"
+                       Style="{StaticResource SmallTextSize}"/>
+                <Label x:Name="Body"
+                       Text="Vangis Mail Beta"
+                       Style="{StaticResource SmallTextSize}"/>
+                <Label x:Name="Arms"
+                       Text="Vangis Vembraces Beta"
+                       Style="{StaticResource SmallTextSize}"/>
+                <Label x:Name="Waist"
+                       Text="Vangis Coil Beta"
+                       Style="{StaticResource SmallTextSize}"/>
+                <Label x:Name="Legs"
+                       Text="Vangis Greaves Beta"
+                       Style="{StaticResource SmallTextSize}"/>
+                <Label x:Name="Weapon"
+                       Text="Vangis Helm Beta"
+                       Style="{StaticResource SmallTextSize}"/>
+            </StackLayout>
+            <StackLayout Grid.Column="1">
+                <Label Text="Skills"
+                       Font="20"/>
+                <ListView>
+                    
+                </ListView>
+            </StackLayout>
+        </Grid>
+        <!--Calculations-->
+        <BoxView BackgroundColor="LightBlue" Grid.Row="3"/>
 
-        </Entry>
-        <Button Text="Search"
-            Clicked="SearchSelected">
-
-        </Button>
-        <Label x:Name="ToBeEquip"
-            />
-        <Button Text="Equip"
-                Clicked="EquipSelected">
-
-        </Button>
-    </StackLayout>
+    </Grid>
 </ContentPage>
