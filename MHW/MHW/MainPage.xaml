@@ -78,8 +78,7 @@
                        />
             </StackLayout>
             <StackLayout Grid.Column="1">
-                <Label Text="Skills"
-                       Font="20"/>
+                <Label Text="Skills"/>
                 <ListView>
                     
                 </ListView>
