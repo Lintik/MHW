@@ -28,7 +28,7 @@
             <Entry Placeholder="Search Equipment"
                    x:Name="ToBeSearch"
                    Grid.Column="0"
-                   Style="{StaticResource SmallTextSize}"/>
+                   />
             <Button Text="+"
                     Grid.Column="1"
                     Clicked="SearchSelected"/>
@@ -42,7 +42,7 @@
             </Grid.ColumnDefinitions>
             <Label x:Name="ToBeEquip"
                    Grid.Column="0"
-                   Style="{StaticResource SmallTextSize}"/>
+                   />
             <Button Text="->"
                     Grid.Column="1"
                     Clicked="EquipSelected"/>
@@ -60,22 +60,22 @@
                        />
                 <Label x:Name="Head"
                        Text="Vangis Helm Beta"
-                       Style="{StaticResource SmallTextSize}"/>
+                       />
                 <Label x:Name="Body"
                        Text="Vangis Mail Beta"
-                       Style="{StaticResource SmallTextSize}"/>
+                       />
                 <Label x:Name="Arms"
                        Text="Vangis Vembraces Beta"
-                       Style="{StaticResource SmallTextSize}"/>
+                       />
                 <Label x:Name="Waist"
                        Text="Vangis Coil Beta"
-                       Style="{StaticResource SmallTextSize}"/>
+                       />
                 <Label x:Name="Legs"
                        Text="Vangis Greaves Beta"
-                       Style="{StaticResource SmallTextSize}"/>
+                       />
                 <Label x:Name="Weapon"
                        Text="Vangis Helm Beta"
-                       Style="{StaticResource SmallTextSize}"/>
+                       />
             </StackLayout>
             <StackLayout Grid.Column="1">
                 <Label Text="Skills"

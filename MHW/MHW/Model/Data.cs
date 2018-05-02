@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Text;
 using SQLite;
 
-namespace MHW
+namespace MHW.Model
 {
     public class Armor
     {

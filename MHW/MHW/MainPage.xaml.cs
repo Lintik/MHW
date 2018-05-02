@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 using SQLite;
+using MHW.Model;
 
 namespace MHW
 {
