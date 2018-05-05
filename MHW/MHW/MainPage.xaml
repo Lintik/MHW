@@ -59,22 +59,22 @@
                 <Label Text="Equipment"
                        />
                 <Label x:Name="Head"
-                       Text="Vangis Helm Beta"
+                       FontSize="Small"
                        />
                 <Label x:Name="Body"
-                       Text="Vangis Mail Beta"
+                       FontSize="Small"
                        />
                 <Label x:Name="Arms"
-                       Text="Vangis Vembraces Beta"
+                       FontSize="Small"
                        />
                 <Label x:Name="Waist"
-                       Text="Vangis Coil Beta"
+                       FontSize="Small"
                        />
                 <Label x:Name="Legs"
-                       Text="Vangis Greaves Beta"
+                       FontSize="Small"
                        />
                 <Label x:Name="Weapon"
-                       Text="Vangis Helm Beta"
+                       FontSize="Small"
                        />
             </StackLayout>
             <StackLayout Grid.Column="1">

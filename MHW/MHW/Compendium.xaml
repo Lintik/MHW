@@ -20,7 +20,8 @@
                             <!--Equipment Name-->
                             <Label Grid.Row="0"
                                    Text="{Binding name}"
-                                   FontAttributes="Bold"/>
+                                   FontAttributes="Bold"
+                                   Margin="10,0,0,0"/>
                             <Grid Grid.Row="1">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
@@ -29,10 +30,12 @@
 
                                 <Label Text="{Binding att0}"
                                        FontSize="Small"
-                                       Grid.Column="0"/>
+                                       Grid.Column="0"
+                                       Margin="10,0,0,0"/>
                                 <Label Text="{Binding att1}"
                                        FontSize="Small"
-                                       Grid.Column="1"/>
+                                       Grid.Column="1"
+                                       Margin="10,0,0,0"/>
                             </Grid>
                             <Grid Grid.Row="2">
                                 <Grid.ColumnDefinitions>
@@ -43,7 +46,8 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Text="Slot:"
                                        FontSize="Small"
-                                       Grid.Column="0"/>
+                                       Grid.Column="0"
+                                       Margin="10,0,0,0"/>
                                 <Label Text="{Binding slot1}"
                                        FontSize="Small"
                                        Grid.Column="1"/>
