@@ -16,8 +16,8 @@ namespace MHW.Model
         public int slot1 { get; set; }
         public int slot2 { get; set; }
         public int slot3 { get; set; }
-        public string att0 { get; set; }
         public string att1 { get; set; }
+        public string att2 { get; set; }
         public string mat1 { get; set; }
         public string mat2 { get; set; }
         public string mat3 { get; set; }
