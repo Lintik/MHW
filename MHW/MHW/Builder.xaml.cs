@@ -28,8 +28,8 @@ namespace MHW
                 keywords = keyword.Split(' ').ToList();
 
             String query = "select * from Armor where lower(name) like \'%" + keyword + "%\'"
-                            + " UNION select * from Armor where lower(att0) like \'%" + keyword + "%\'"
-                            + " UNION select * from Armor where lower(att1) like \'%" + keyword + "%\'";
+                            + " UNION select * from Armor where lower(att1) like \'%" + keyword + "%\'"
+                            + " UNION select * from Armor where lower(att2) like \'%" + keyword + "%\'";
 
             using (var conn = new SQLiteConnection(App.DBPath))
             {

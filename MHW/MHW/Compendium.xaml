@@ -28,11 +28,11 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label Text="{Binding att0}"
+                                <Label Text="{Binding att1}"
                                        FontSize="Small"
                                        Grid.Column="0"
                                        Margin="10,0,0,0"/>
-                                <Label Text="{Binding att1}"
+                                <Label Text="{Binding att2}"
                                        FontSize="Small"
                                        Grid.Column="1"
                                        Margin="10,0,0,0"/>
