@@ -17,11 +17,17 @@ namespace MHW.Model
         public int slot2 { get; set; }
         public int slot3 { get; set; }
         public string att1 { get; set; }
+        public string att1lvl { get; set; }
         public string att2 { get; set; }
+        public string att2lvl { get; set; }
         public string mat1 { get; set; }
+        public string mat1count { get; set; }
         public string mat2 { get; set; }
+        public string mat2count { get; set; }
         public string mat3 { get; set; }
+        public string mat3count { get; set; }
         public string mat4 { get; set; }
+        public string mat4count { get; set; }
     }
 
     public class ArmorSet
