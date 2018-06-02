@@ -5,87 +5,9 @@
              x:Class="MHW.MainPage">
     <!-- Navigation Page -->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="DB"
-                     Activated="DB_Activated"
-                     
-                     />
+        <ToolbarItem Name="MenuItem1" Order="Primary" Text="Database" Priority="0" Activated="DB_Activated"/>
+        <ToolbarItem Name="MenuItem2" Order="Primary" Text="Builder" Priority="1" Activated="BD_Activated"/>
     </ContentPage.ToolbarItems>
 
-    <Grid RowSpacing="0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        
-        <!--Search-->
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="5*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Entry Placeholder="Search Equipment"
-                   x:Name="ToBeSearch"
-                   Grid.Column="0"
-                   />
-            <Button Text="+"
-                    Grid.Column="1"
-                    Clicked="SearchSelected"/>
-        </Grid>
-        
-        <!--Equip-->
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="5*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Label x:Name="ToBeEquip"
-                   Grid.Column="0"
-                   />
-            <Button Text="->"
-                    Grid.Column="1"
-                    Clicked="EquipSelected"/>
-        </Grid>
-        
-        <!--Equipment and Skills-->
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackLayout Grid.Column="0"
-                         Margin="10,0,0,0">
-                <Label Text="Equipment"
-                       />
-                <Label x:Name="Head"
-                       FontSize="Small"
-                       />
-                <Label x:Name="Body"
-                       FontSize="Small"
-                       />
-                <Label x:Name="Arms"
-                       FontSize="Small"
-                       />
-                <Label x:Name="Waist"
-                       FontSize="Small"
-                       />
-                <Label x:Name="Legs"
-                       FontSize="Small"
-                       />
-                <Label x:Name="Weapon"
-                       FontSize="Small"
-                       />
-            </StackLayout>
-            <StackLayout Grid.Column="1">
-                <Label Text="Skills"/>
-                <ListView>
-                    
-                </ListView>
-            </StackLayout>
-        </Grid>
-        <!--Calculations-->
-        <BoxView BackgroundColor="LightBlue" Grid.Row="3"/>
-
-    </Grid>
+    
 </ContentPage>
