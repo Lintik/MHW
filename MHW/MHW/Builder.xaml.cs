@@ -18,9 +18,8 @@ namespace MHW
 		{
 			InitializeComponent ();
 		}
-
-        //Query the database given the keywords
-        private void SearchSelected(object sender, EventArgs e)
+        //Search database on button pressed
+        private void SearchMHWDB(object sender, EventArgs e)
         {
             var keyword = ToBeSearch.Text;
             List<String> keywords = new List<string>();
@@ -39,7 +38,7 @@ namespace MHW
 
                 if (equip.Count != 0)
                 {
-                    ToBeEquip.Text = equip[0].name;
+                    ToBeEquip.ItemsSource = equip.Select(x => x.name).ToList();
                 }
             }
         }
@@ -51,7 +50,7 @@ namespace MHW
                 conn.CreateTable<Armor>();
 
                 var equip = conn.Query<Armor>("select * from Armor where lower(name) like ?",
-                   "%" + ToBeEquip.Text + "%").ToList();
+                   "%" + (ToBeEquip.Items[ToBeEquip.SelectedIndex]).ToString() + "%").ToList();
 
                 if (equip.Count != 0)
                 {

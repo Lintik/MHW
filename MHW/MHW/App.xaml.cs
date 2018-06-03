@@ -19,7 +19,7 @@ namespace MHW
 
             DBPath = path;
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage() { Title = "MHW" });
 
         }
 

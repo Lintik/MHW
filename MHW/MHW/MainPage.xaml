@@ -5,8 +5,8 @@
              x:Class="MHW.MainPage">
     <!-- Navigation Page -->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="MenuItem1" Order="Primary" Text="Database" Priority="0" Activated="DB_Activated"/>
-        <ToolbarItem Name="MenuItem2" Order="Primary" Text="Builder" Priority="1" Activated="BD_Activated"/>
+        <ToolbarItem Name="MenuItem1" Order="Primary" Text="DB" Priority="0" Activated="DB_Activated" />
+        <ToolbarItem Name="MenuItem2" Order="Primary" Text="BD" Priority="1" Activated="BD_Activated"/>
     </ContentPage.ToolbarItems>
 
     

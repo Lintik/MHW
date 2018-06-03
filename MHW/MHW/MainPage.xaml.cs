@@ -19,13 +19,13 @@ namespace MHW
         //Navigate to Database
         public void DB_Activated(object sender, EventArgs e)
 		{
-		    Navigation.PushAsync(new Compendium());
+		    Navigation.PushAsync(new Compendium() { Title = "Database"});
 		}
 
         //Navigate to Builder
         public void BD_Activated(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Builder());
+            Navigation.PushAsync(new Builder() { Title = "Builder" });
         }
        
     }

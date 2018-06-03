@@ -13,64 +13,177 @@
 
         <!--Search-->
         <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="5*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Entry Placeholder="Search Equipment"
-                   x:Name="ToBeSearch"
-                   Grid.Column="0"
-                   />
-            <Button Text="+"
-                    Grid.Column="1"
-                    Clicked="SearchSelected"/>
+            <SearchBar x:Name="ToBeSearch" 
+                       Placeholder="Search Equipment"
+                       SearchButtonPressed="SearchMHWDB"
+                       />
         </Grid>
 
         <!--Equip-->
         <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="5*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Label x:Name="ToBeEquip"
-                   Grid.Column="0"
-                   />
-            <Button Text="->"
-                    Grid.Column="1"
-                    Clicked="EquipSelected"/>
+            <Picker Title="Select Equipment"
+                    x:Name="ToBeEquip"
+                    VerticalOptions="CenterAndExpand"
+                    SelectedIndexChanged="EquipSelected">
+                <Picker.Items>
+                    <x:String>Empty</x:String>
+                    
+                </Picker.Items>
+            </Picker>
+            
+                
         </Grid>
 
-        <!--Equipment and Skills-->
+        <!--Equipment, Slots and Skills-->
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+
+            <!--Equipment-->
             <StackLayout Grid.Column="0"
                          Margin="10,0,0,0">
+                
                 <Label Text="Equipment"
+                       XAlign="Center"
                        />
-                <Label x:Name="Head"
-                       FontSize="Small"
+                <!--Weapon-->
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions >
+                    <Label Text="Weapon:"
+                           FontSize="Small"
+                           Grid.Column="0"
                        />
-                <Label x:Name="Body"
-                       FontSize="Small"
+                    <Label x:Name="Weapon"
+                           FontSize="Small"
+                           Grid.Column="1"
                        />
-                <Label x:Name="Arms"
-                       FontSize="Small"
+                </Grid>
+                <!--Head-->
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions >
+                    <Label Text="Head:"
+                           FontSize="Small"
+                           Grid.Column="0"
                        />
-                <Label x:Name="Waist"
-                       FontSize="Small"
+                    <Label x:Name="Head"
+                           FontSize="Small"
+                           Grid.Column="1"
                        />
-                <Label x:Name="Legs"
-                       FontSize="Small"
+                </Grid>
+                <!--Body-->
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions >
+                    <Label Text="Body:"
+                           FontSize="Small"
+                           Grid.Column="0"
                        />
-                <Label x:Name="Weapon"
-                       FontSize="Small"
+                    <Label x:Name="Body"
+                           FontSize="Small"
+                           Grid.Column="1"
                        />
+                </Grid>
+                <!--Arms-->
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions >
+                    <Label Text="Arms:"
+                           FontSize="Small"
+                           Grid.Column="0"
+                       />
+                    <Label x:Name="Arms"
+                           FontSize="Small"
+                           Grid.Column="1"
+                       />
+                </Grid>
+                <!--Waist-->
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions >
+                    <Label Text="Hips:"
+                           FontSize="Small"
+                           Grid.Column="0"
+                       />
+                    <Label x:Name="Waist"
+                           FontSize="Small"
+                           Grid.Column="1"
+                       />
+                </Grid>
+                <!--Legs-->
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions >
+                    <Label Text="Legs:"
+                           FontSize="Small"
+                           Grid.Column="0"
+                       />
+                    <Label x:Name="Legs"
+                           FontSize="Small"
+                           Grid.Column="1"
+                       />
+                </Grid>
+                <!--Slots-->
+                <Label Text="Slots"
+                       XAlign="Center"
+                       />
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions >
+                    <Label Text="&lt;&gt;:"
+                           FontSize="Small"
+                           Grid.Column="0"
+                       />
+                    <Label x:Name="Size1"
+                           Text="0"
+                           FontSize="Small"
+                           Grid.Column="1"
+                       />
+                    <Label Text="&lt;-&gt;:"
+                           FontSize="Small"
+                           Grid.Column="2"
+                       />
+                    <Label x:Name="Size2"
+                           Text="0"
+                           FontSize="Small"
+                           Grid.Column="3"
+                       />
+                    <Label Text="&lt;--&gt;:"
+                           FontSize="Small"
+                           Grid.Column="4"
+                       />
+                    <Label x:Name="Size3"
+                           Text="0"
+                           FontSize="Small"
+                           Grid.Column="5"
+                       />
+                </Grid>
             </StackLayout>
             <StackLayout Grid.Column="1">
-                <Label Text="Skills"/>
+                <Label Text="Skills"
+                       XAlign="Center"
+                       />
                 <ListView>
 
                 </ListView>
