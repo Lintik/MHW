@@ -5,6 +5,7 @@
 
     <StackLayout>
         <SearchBar x:Name="MainSearchBar" 
+                   TextChanged="TextChangedMHWDB"
                    SearchButtonPressed="SearchMHWDB"/>
         <ListView x:Name="MHWDBListView"
                   HasUnevenRows="True">
