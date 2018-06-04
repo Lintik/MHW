@@ -13,9 +13,7 @@ namespace MHW.Model
         public static Dictionary<string, int> EquippedID = new Dictionary<string, int>();
         public static ObservableCollection<string> SkillList = new ObservableCollection<string>();
 
-        public static int Slot1Count = 0;
-        public static int Slot2Count = 0;
-        public static int Slot3COunt = 0;
+        public static int[] SlotCount = new int[3] { 0, 0, 0 };
         public static string weapon = "";
         public static string head = "";
         public static string body = "";
@@ -23,22 +21,24 @@ namespace MHW.Model
         public static string waist = "";
         public static string legs = "";
 
-
-
-        //Update EquippedSkills 
         public static void UpdateEquipped(string part, int id)
         {
             if (EquippedID.ContainsKey(part) && part != null)
             {
                 RemoveSkill(part);
+                RemoveSlot(part);
                 Equipment.EquippedID.Remove(part);
                 Equipment.EquippedID.Add(part, id);
                 AddSkill(part);
+                AddSlot(part);
+                UpdatePart(part);
             }
             else
             {
                 Equipment.EquippedID.Add(part, id);
                 AddSkill(part);
+                AddSlot(part);
+                UpdatePart(part);
             }
         }
 
@@ -56,7 +56,7 @@ namespace MHW.Model
                 int att2lvl = armor.att2lvl;
 
                 if (EquippedSkills.ContainsKey(att1) && att1 != null)
-                { 
+                {
                     EquippedSkills[att1] -= att1lvl;
                     if (EquippedSkills[att1] < 1)
                         EquippedSkills.Remove(att1);
@@ -95,15 +95,57 @@ namespace MHW.Model
             UpdateSkillList();
         }
 
+        public static void RemoveSlot(string part)
+        {
+            using (var conn = new SQLiteConnection(App.DBPath))
+            {
+                conn.CreateTable<Armor>();
+
+                var armor = conn.Get<Armor>(EquippedID[part]);
+                if (armor.slot1 != 0) SlotCount[armor.slot1 - 1]--;
+                if (armor.slot2 != 0) SlotCount[armor.slot2 - 1]--;
+                if (armor.slot3 != 0) SlotCount[armor.slot3 - 1]--;
+            }
+        }
+
+        public static void AddSlot(string part)
+        {
+            using (var conn = new SQLiteConnection(App.DBPath))
+            {
+                conn.CreateTable<Armor>();
+
+                var armor = conn.Get<Armor>(EquippedID[part]);
+                if (armor.slot1 != 0) SlotCount[armor.slot1 - 1]++;
+                if (armor.slot2 != 0) SlotCount[armor.slot2 - 1]++;
+                if (armor.slot3 != 0) SlotCount[armor.slot3 - 1]++;
+            }
+        }
+
         //Clear SkillList and repopulate the list with the new values
         public static void UpdateSkillList()
         {
             SkillList.Clear();
             foreach (KeyValuePair<string, int> entry in EquippedSkills)
             {
-                if(entry.Key != null)
+                if (entry.Key != null && entry.Value != 0)
                     SkillList.Add(entry.Key + " " + entry.Value.ToString());
             }
         }
+
+        public static void UpdatePart(string part)
+        {
+            using (var conn = new SQLiteConnection(App.DBPath))
+            {
+                conn.CreateTable<Armor>();
+
+                var armor = conn.Get<Armor>(EquippedID[part]);
+                if (armor.part == "head") head = armor.name;
+                else  if (armor.part == "body") body = armor.name;
+                else if (armor.part == "arms") arms = armor.name;
+                else if (armor.part == "waist") waist = armor.name;
+                else if (armor.part == "legs") legs = armor.name;
+            }
+        }
+
     }
 }

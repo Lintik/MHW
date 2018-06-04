@@ -23,11 +23,16 @@ namespace MHW
         protected override void OnAppearing()
         {
             base.OnAppearing();
+
             Head.Text = Equipment.head;
             Body.Text = Equipment.body;
             Arms.Text = Equipment.arms;
             Waist.Text = Equipment.waist;
             Legs.Text = Equipment.legs;
+            Size1.Text = Equipment.SlotCount[0].ToString();
+            Size2.Text = Equipment.SlotCount[1].ToString();
+            Size3.Text = Equipment.SlotCount[2].ToString();
+            SkillsListView.ItemsSource = Equipment.SkillList;
         }
 
         //Search database on button pressed
@@ -103,6 +108,9 @@ namespace MHW
             }
 
             SkillsListView.ItemsSource = Equipment.SkillList;
+            Size1.Text = Equipment.SlotCount[0].ToString();
+            Size2.Text = Equipment.SlotCount[1].ToString();
+            Size3.Text = Equipment.SlotCount[2].ToString();
         }
 
     }
