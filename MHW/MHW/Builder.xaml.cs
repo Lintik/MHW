@@ -84,7 +84,7 @@ namespace MHW
                 }
             }
 
-
+            SkillsListView.ItemsSource = Equipment.SkillList;
         }
 
     }

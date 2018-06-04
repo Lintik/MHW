@@ -8,14 +8,16 @@ namespace MHW.Model
 {
     public class Equipment
     {
-        public static Dictionary<string, int> EquippedSkills;
-        public static Dictionary<string, int> EquippedID;
-        public static List<string> SkillList;
+        public static Dictionary<string, int> EquippedSkills = new Dictionary<string, int>();
+        public static Dictionary<string, int> EquippedID = new Dictionary<string, int>();
+        public static List<string> SkillList = new List<string>();
 
         public static int Slot1Count = 0;
         public static int Slot2Count = 0;
         public static int Slot3COunt = 0;
 
+
+        //Update EquippedSkills 
         public static void UpdateEquipped(string part, int id)
         {
             if (EquippedID.ContainsKey(part))
@@ -31,6 +33,7 @@ namespace MHW.Model
             }
         }
 
+        //Connect to database to fetch necessary values then remove skills according to specific amount
         public static void RemoveSkill(string part)
         {
             using (var conn = new SQLiteConnection(App.DBPath))
@@ -58,8 +61,10 @@ namespace MHW.Model
                     }
                 }
             }
+            UpdateSkillList();
         }
 
+        //Connect to database to fetch necessary values then insert them into EquippedSkills
         public static void AddSkill(string part)
         {
             using (var conn = new SQLiteConnection(App.DBPath))
@@ -80,14 +85,17 @@ namespace MHW.Model
                 }
                 else EquippedSkills.Add(att1, att1lvl);
             }
+
+            UpdateSkillList();
         }
 
-        public static void UpdateEquippedSkills()
+        //Clear SkillList and repopulate the list with the new values
+        public static void UpdateSkillList()
         {
-            EquippedSkills.Clear();
-            foreach(KeyValuePair<string, int> entry in EquippedSkills)
+            SkillList.Clear();
+            foreach (KeyValuePair<string, int> entry in EquippedSkills)
             {
-
+                SkillList.Add(entry.Key + " " + entry.Value.ToString());
             }
         }
     }
