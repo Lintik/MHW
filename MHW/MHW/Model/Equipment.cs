@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using SQLite;
+using System.Collections.ObjectModel;
 
 namespace MHW.Model
 {
@@ -10,19 +11,27 @@ namespace MHW.Model
     {
         public static Dictionary<string, int> EquippedSkills = new Dictionary<string, int>();
         public static Dictionary<string, int> EquippedID = new Dictionary<string, int>();
-        public static List<string> SkillList = new List<string>();
+        public static ObservableCollection<string> SkillList = new ObservableCollection<string>();
 
         public static int Slot1Count = 0;
         public static int Slot2Count = 0;
         public static int Slot3COunt = 0;
+        public static string weapon = "";
+        public static string head = "";
+        public static string body = "";
+        public static string arms = "";
+        public static string waist = "";
+        public static string legs = "";
+
 
 
         //Update EquippedSkills 
         public static void UpdateEquipped(string part, int id)
         {
-            if (EquippedID.ContainsKey(part))
+            if (EquippedID.ContainsKey(part) && part != null)
             {
                 RemoveSkill(part);
+                Equipment.EquippedID.Remove(part);
                 Equipment.EquippedID.Add(part, id);
                 AddSkill(part);
             }
@@ -47,18 +56,17 @@ namespace MHW.Model
                 int att2lvl = armor.att2lvl;
 
                 if (EquippedSkills.ContainsKey(att1) && att1 != null)
-                {
+                { 
                     EquippedSkills[att1] -= att1lvl;
                     if (EquippedSkills[att1] < 1)
-                    {
                         EquippedSkills.Remove(att1);
-                    }
-                    if(EquippedSkills.ContainsKey(att2) && att2 != null)
-                    {
-                        EquippedSkills[att2] -= att2lvl;
-                        if (EquippedSkills[att2] < 1)
-                            EquippedSkills.Remove(att2);
-                    }
+                }
+
+                if (EquippedSkills.ContainsKey(att2) && att2 != null)
+                {
+                    EquippedSkills[att2] -= att2lvl;
+                    if (EquippedSkills[att2] < 1)
+                        EquippedSkills.Remove(att2);
                 }
             }
             UpdateSkillList();
@@ -77,13 +85,11 @@ namespace MHW.Model
                 string att2 = armor.att2;
                 int att2lvl = armor.att2lvl;
 
-                if (EquippedSkills.ContainsKey(att1))
-                { 
-                    EquippedSkills[att1] += att1lvl;
-                    if (EquippedSkills.ContainsKey(att2)) EquippedSkills[att2] += att2lvl;
-                    else EquippedSkills.Add(att2, att2lvl);
-                }
+                if (EquippedSkills.ContainsKey(att1) && att1 != null) EquippedSkills[att1] += att1lvl;
                 else EquippedSkills.Add(att1, att1lvl);
+
+                if (EquippedSkills.ContainsKey(att2) && att2 != null) EquippedSkills[att2] += att2lvl;
+                else EquippedSkills.Add(att2, att2lvl);
             }
 
             UpdateSkillList();
@@ -95,7 +101,8 @@ namespace MHW.Model
             SkillList.Clear();
             foreach (KeyValuePair<string, int> entry in EquippedSkills)
             {
-                SkillList.Add(entry.Key + " " + entry.Value.ToString());
+                if(entry.Key != null)
+                    SkillList.Add(entry.Key + " " + entry.Value.ToString());
             }
         }
     }

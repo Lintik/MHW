@@ -19,6 +19,17 @@ namespace MHW
 			InitializeComponent ();
 		}
 
+        //Retain the memory of equipped items
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Head.Text = Equipment.head;
+            Body.Text = Equipment.body;
+            Arms.Text = Equipment.arms;
+            Waist.Text = Equipment.waist;
+            Legs.Text = Equipment.legs;
+        }
+
         //Search database on button pressed
         private void SearchMHWDB(object sender, EventArgs e)
         {
@@ -50,9 +61,16 @@ namespace MHW
             using (var conn = new SQLiteConnection(App.DBPath))
             {
                 conn.CreateTable<Armor>();
+                List<Armor> equip = new List<Armor>();
+                try
+                {
+                    equip = conn.Query<Armor>("select * from Armor where lower(name) like ?",
+                       "%" + (ToBeEquip.Items[ToBeEquip.SelectedIndex]).ToString() + "%").ToList();
+                }
+                catch
+                {
 
-                var equip = conn.Query<Armor>("select * from Armor where lower(name) like ?",
-                   "%" + (ToBeEquip.Items[ToBeEquip.SelectedIndex]).ToString() + "%").ToList();
+                }
 
                 if (equip.Count != 0)
                 {
