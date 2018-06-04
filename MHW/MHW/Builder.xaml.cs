@@ -18,6 +18,7 @@ namespace MHW
 		{
 			InitializeComponent ();
 		}
+
         //Search database on button pressed
         private void SearchMHWDB(object sender, EventArgs e)
         {
@@ -43,6 +44,7 @@ namespace MHW
             }
         }
 
+        //Equipped Selected Armor, Charms, Decorations or Weapon
         private void EquipSelected(object sender, EventArgs e)
         {
             using (var conn = new SQLiteConnection(App.DBPath))
@@ -57,25 +59,33 @@ namespace MHW
                     if (equip[0].part == "head")
                     {
                         Head.Text = equip[0].name;
+                        Equipment.UpdateEquipped("head", equip[0].id);
                     }
                     else if (equip[0].part == "body")
                     {
                         Body.Text = equip[0].name;
+                        Equipment.UpdateEquipped("body", equip[0].id);
                     }
                     else if (equip[0].part == "arms")
                     {
                         Arms.Text = equip[0].name;
+                        Equipment.UpdateEquipped("arms", equip[0].id);
                     }
                     else if (equip[0].part == "waist")
                     {
                         Waist.Text = equip[0].name;
+                        Equipment.UpdateEquipped("waist", equip[0].id);
                     }
                     else
                     {
                         Legs.Text = equip[0].name;
+                        Equipment.UpdateEquipped("legs", equip[0].id);
                     }
                 }
             }
+
+
         }
+
     }
 }
