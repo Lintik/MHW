@@ -133,24 +133,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\mhw-charms-wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw-feet-boots-greaves-wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw-waist-belt-wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw-arm-gauntlets-wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw-torso-chest-plate-wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw-helm-headgear-wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\gem_level_3.png" />
   </ItemGroup>
   <ItemGroup>
@@ -176,5 +158,23 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw_charms_wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw_feet_boots_greaves_wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw_waist_belt_wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw_arm_gauntlets_wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw_torso_chest_plate_wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw_helm_headgear_wiki.png" />
   </ItemGroup>
 </Project>

@@ -73,7 +73,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Image Source="mhw-helm-headgear-wiki.png"
+                    <Image Source="mhw_helm_headgear_wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Head"
@@ -87,7 +87,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Image Source="mhw-torso-chest-plate-wiki.png"
+                    <Image Source="mhw_torso_chest_plate_wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Body"
@@ -101,7 +101,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Image Source="mhw-arm-gauntlets-wiki.png"
+                    <Image Source="mhw_arm_gauntlets_wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Arms"
@@ -115,7 +115,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Image Source="mhw-waist-belt-wiki.png"
+                    <Image Source="mhw_waist_belt_wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Waist"
@@ -129,7 +129,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Image Source="mhw-feet-boots-greaves-wiki.png"
+                    <Image Source="mhw_feet_boots_greaves_wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Legs"
