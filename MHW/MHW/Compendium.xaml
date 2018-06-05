@@ -25,12 +25,14 @@
                             <Label Text="{Binding name}"
                                    FontAttributes="Bold"
                                    Font="20"
-                                   Margin="10"
+                                   Margin="10,0,0,0"
                                    />
                             <!--Skills-->
                             <Grid IsVisible="{Binding att1,  Converter={StaticResource StringToBool}}"
                                   >
                                 <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
@@ -39,10 +41,19 @@
                                        FontSize="Small"
                                        Margin="20,0,0,0"
                                        />
-                                <Label Text="{Binding att2}"
+                                <Label Text="{Binding att1lvl}"
                                        Grid.Column="1"
                                        FontSize="Small"
+                                       />
+                                <Label Text="{Binding att2}"
+                                       Grid.Column="2"
+                                       FontSize="Small"
                                        Margin="20,0,0,0"
+                                       />
+                                <Label Text="{Binding att2lvl}"
+                                       Grid.Column="3"
+                                       FontSize="Small"
+                                       IsVisible="{Binding att2, Converter={StaticResource StringToBool}}"
                                        />
                             </Grid>
                             <!--Slots-->
@@ -55,7 +66,7 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Text="Slots"
-                                       Grid.Column="1"
+                                       Grid.Column="0"
                                        FontSize="Small"
                                        Margin="20,0,0,0"
                                        />
@@ -74,6 +85,47 @@
                                        FontSize="Small"
                                        Margin="10,0,0,0"
                                        />
+                            </Grid>
+                            <!--Stats-->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="defense.png"
+                                       Grid.Column="0"/>
+                                <Label Text="{Binding defense}"
+                                       Grid.Column="1"/>
+                                <Image Source="fire.png"
+                                       Grid.Column="2"/>
+                                <Label Text="{Binding fire}"
+                                       Grid.Column="3"/>
+                                <Image Source="water.png"
+                                       Grid.Column="4"/>
+                                <Label Text="{Binding water}"
+                                       Grid.Column="5"/>
+                                <Image Source="thunder.png"
+                                       Grid.Column="6"/>
+                                <Label Text="{Binding thunder}"
+                                       Grid.Column="7"/>
+                                <Image Source="ice.png"
+                                       Grid.Column="8"/>
+                                <Label Text="{Binding ice}"
+                                       Grid.Column="9"/>
+                                <Image Source="dragon.png"
+                                       Grid.Column="10"/>
+                                <Label Text="{Binding dragon}"
+                                       Grid.Column="11"/>
                             </Grid>
                         </StackLayout>
                     </ViewCell>

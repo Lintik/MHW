@@ -23,9 +23,7 @@ namespace MHW
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            string s = value as string;
-            int i = int.Parse(s);
-            return i > 0 ? true : false;
+            return (int)value != 0;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

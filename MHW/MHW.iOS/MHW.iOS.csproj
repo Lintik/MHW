@@ -132,4 +132,49 @@
       <Name>MHW</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw-charms-wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw-feet-boots-greaves-wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw-waist-belt-wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw-arm-gauntlets-wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw-torso-chest-plate-wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw-helm-headgear-wiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gem_level_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gem_level_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gem_level_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\defense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\thunder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fire.png" />
+  </ItemGroup>
 </Project>

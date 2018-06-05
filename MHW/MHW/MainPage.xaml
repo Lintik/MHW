@@ -9,5 +9,18 @@
         <ToolbarItem Name="MenuItem2" Order="Primary" Text="BD" Priority="1" Activated="BD_Activated"/>
     </ContentPage.ToolbarItems>
 
+    <StackLayout>
+        <Label Text="Current Feature"
+               Font="Bold,20"
+               Margin="20,0,0,0"/>
+        <Label Margin="40,0,0,0"
+               Text="Database(DB) contains armor database &#10;Builder(BD) supports equipping armor"/>
+        
+        <Label Text="Upcoming Feature"
+               Font="Bold,20"
+               Margin="20,0,0,0"/>
+        <Label Margin="40,0,0,0"
+               Text="Build equipment globally &#10;Add Weapon, Charms, and Monster database &#10;Integrate set bonus on builder &#10;Integrate charms on builder"/>
+    </StackLayout>
     
 </ContentPage>

@@ -24,7 +24,9 @@
             <Picker Title="Select Equipment"
                     x:Name="ToBeEquip"
                     VerticalOptions="CenterAndExpand"
-                    SelectedIndexChanged="EquipSelected">
+                    SelectedIndexChanged="EquipSelected"
+                    Margin="20,0,0,20">
+                    
                 <Picker.Items>
                     <x:String>Empty</x:String>
 
@@ -47,6 +49,8 @@
 
                 <Label Text="Equipment"
                        XAlign="Center"
+                       Font="16"
+                       FontAttributes="Bold"
                        />
                 <!--Weapon-->
                 <Grid>
@@ -69,8 +73,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Label Text="Head:"
-                           FontSize="Small"
+                    <Image Source="mhw-helm-headgear-wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Head"
@@ -84,8 +87,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Label Text="Body:"
-                           FontSize="Small"
+                    <Image Source="mhw-torso-chest-plate-wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Body"
@@ -99,8 +101,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Label Text="Arms:"
-                           FontSize="Small"
+                    <Image Source="mhw-arm-gauntlets-wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Arms"
@@ -114,8 +115,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Label Text="Hips:"
-                           FontSize="Small"
+                    <Image Source="mhw-waist-belt-wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Waist"
@@ -129,8 +129,7 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Label Text="Legs:"
-                           FontSize="Small"
+                    <Image Source="mhw-feet-boots-greaves-wiki.png"
                            Grid.Column="0"
                        />
                     <Label x:Name="Legs"
@@ -190,6 +189,8 @@
                 <Label Text="Skills"
                        XAlign="Center"
                        Grid.Row="0"
+                       Font="16"
+                       FontAttributes="Bold"
                        />
                 <ListView x:Name="SkillsListView"
                           Grid.Row="1">

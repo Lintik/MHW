@@ -108,6 +108,21 @@
     <None Include="MHW.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\defense.png" />
+    <Content Include="Assets\dragon.png" />
+    <Content Include="Assets\fire.png" />
+    <Content Include="Assets\gem_level_1.png" />
+    <Content Include="Assets\gem_level_2.png" />
+    <Content Include="Assets\gem_level_3.png" />
+    <Content Include="Assets\ice.png" />
+    <Content Include="Assets\mhw-arm-gauntlets-wiki.png" />
+    <Content Include="Assets\mhw-charms-wiki.png" />
+    <Content Include="Assets\mhw-feet-boots-greaves-wiki.png" />
+    <Content Include="Assets\mhw-helm-headgear-wiki.png" />
+    <Content Include="Assets\mhw-torso-chest-plate-wiki.png" />
+    <Content Include="Assets\mhw-waist-belt-wiki.png" />
+    <Content Include="Assets\thunder.png" />
+    <Content Include="Assets\water.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />
