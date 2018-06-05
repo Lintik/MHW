@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
-using SQLite;
+﻿using SQLite;
 
 namespace MHW.Model
 {
