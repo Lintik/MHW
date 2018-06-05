@@ -55,8 +55,6 @@ namespace MHW
             }
         }
 
-
-
         protected override void OnAppearing()
         {
             base.OnAppearing();

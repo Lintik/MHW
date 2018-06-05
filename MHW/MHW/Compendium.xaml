@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MHW"
              x:Class="MHW.Compendium">
 
+    <!--StringToBool-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:StringNullOrEmptyBoolConverter x:Key="StringToBool" />
+            <local:IntBoolConverter x:Key="IntToBool" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <StackLayout>
         <SearchBar x:Name="MainSearchBar" 
                    TextChanged="TextChangedMHWDB"
@@ -12,55 +21,61 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <!--Equipment Name-->
-                            <Label Grid.Row="0"
-                                   Text="{Binding name}"
+                        <StackLayout>
+                            <Label Text="{Binding name}"
                                    FontAttributes="Bold"
-                                   Margin="10,0,0,0"/>
-                            <Grid Grid.Row="1">
+                                   Font="20"
+                                   Margin="10"
+                                   />
+                            <!--Skills-->
+                            <Grid IsVisible="{Binding att1,  Converter={StaticResource StringToBool}}"
+                                  >
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-
                                 <Label Text="{Binding att1}"
-                                       FontSize="Small"
                                        Grid.Column="0"
-                                       Margin="10,0,0,0"/>
-                                <Label Text="{Binding att2}"
                                        FontSize="Small"
+                                       Margin="20,0,0,0"
+                                       />
+                                <Label Text="{Binding att2}"
                                        Grid.Column="1"
-                                       Margin="10,0,0,0"/>
+                                       FontSize="Small"
+                                       Margin="20,0,0,0"
+                                       />
                             </Grid>
-                            <Grid Grid.Row="2">
+                            <!--Slots-->
+                            <Grid IsVisible="{Binding slot1,  Converter={StaticResource IntToBool}}"
+                                  >
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Text="Slot:"
+                                <Label Text="Slots"
+                                       Grid.Column="1"
                                        FontSize="Small"
-                                       Grid.Column="0"
-                                       Margin="10,0,0,0"/>
+                                       Margin="20,0,0,0"
+                                       />
                                 <Label Text="{Binding slot1}"
+                                       Grid.Column="1"
                                        FontSize="Small"
-                                       Grid.Column="1"/>
+                                       Margin="10,0,0,0"
+                                       />
                                 <Label Text="{Binding slot2}"
+                                       Grid.Column="2"
                                        FontSize="Small"
-                                       Grid.Column="2"/>
+                                       Margin="10,0,0,0"
+                                       />
                                 <Label Text="{Binding slot3}"
+                                       Grid.Column="3"
                                        FontSize="Small"
-                                       Grid.Column="3"/>
+                                       Margin="10,0,0,0"
+                                       />
                             </Grid>
-
-                        </Grid>
+                        </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
