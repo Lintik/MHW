@@ -109,12 +109,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\defense.png" />
+    <Content Include="Assets\defense16.png" />
     <Content Include="Assets\dragon.png" />
+    <Content Include="Assets\dragon16.png" />
     <Content Include="Assets\fire.png" />
+    <Content Include="Assets\fire16.png" />
     <Content Include="Assets\gem_level_1.png" />
     <Content Include="Assets\gem_level_2.png" />
     <Content Include="Assets\gem_level_3.png" />
     <Content Include="Assets\ice.png" />
+    <Content Include="Assets\ice16.png" />
     <Content Include="Assets\mhw_arm_gauntlets_wiki.png" />
     <Content Include="Assets\mhw_charms_wiki.png" />
     <Content Include="Assets\mhw_feet_boots_greaves_wiki.png" />
@@ -122,7 +126,9 @@
     <Content Include="Assets\mhw_torso_chest_plate_wiki.png" />
     <Content Include="Assets\mhw_waist_belt_wiki.png" />
     <Content Include="Assets\thunder.png" />
+    <Content Include="Assets\thunder16.png" />
     <Content Include="Assets\water.png" />
+    <Content Include="Assets\water16.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />

@@ -42,7 +42,7 @@ namespace MHW
             {
                 conn.CreateTable<Armor>();
 
-                var equip = conn.Query<Armor>("select * from Armor left join Armorset using(armorset) where lower(name) like ? UNION select * from Armor left join Armorset using(armorset)  where lower(att1) like ? UNION select * from Armor left join Armorset using(armorset) where lower(att2) like ? order by id desc",
+                var equip = conn.Query<Armor>("select Armor.*, ArmorSet.* from Armor left join Armorset using(armorset) where lower(name) like ? UNION select Armor.*, ArmorSet.* from Armor left join Armorset using(armorset)  where lower(att1) like ? UNION select Armor.*, ArmorSet.* from Armor left join Armorset using(armorset) where lower(att2) like ? order by id desc",
                    "%" + keyword.ToLower() + "%",
                    "%" + keyword.ToLower() + "%",
                    "%" + keyword.ToLower() + "%").ToList();
@@ -58,7 +58,8 @@ namespace MHW
             {
                 conn.CreateTable<Armor>();
 
-                var equip = conn.Table<Armor>().ToList();
+                var equip = conn.Query<Armor>("select Armor.*, ArmorSet.* from Armor left join Armorset using(armorset)").ToList();
+
                 MHWDBListView.ItemsSource = equip;
             }
         }

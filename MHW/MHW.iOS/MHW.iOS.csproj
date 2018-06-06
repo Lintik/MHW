@@ -177,4 +177,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\mhw_helm_headgear_wiki.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\water16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\thunder16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ice16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fire16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dragon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\defense16.png" />
+  </ItemGroup>
 </Project>

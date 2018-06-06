@@ -27,6 +27,53 @@
                                    Font="20"
                                    Margin="10,0,0,0"
                                    />
+                            <!--Stats-->
+                            <Grid Margin="20,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="defense.png"
+                                       Grid.Column="0"
+                                       />
+                                <Label Text="{Binding def}"
+                                       Grid.Column="1"/>
+                                <Image Source="fire16.png"
+                                       Grid.Column="2"
+                                       />
+                                <Label Text="{Binding fire}"
+                                       Grid.Column="3"/>
+                                <Image Source="water16.png"
+                                       Grid.Column="4"
+                                       />
+                                <Label Text="{Binding water}"
+                                       Grid.Column="5"/>
+                                <Image Source="thunder16.png"
+                                       Grid.Column="6"
+                                       />
+                                <Label Text="{Binding thunder}"
+                                       Grid.Column="7"/>
+                                <Image Source="ice16.png"
+                                       Grid.Column="8"
+                                       />
+                                <Label Text="{Binding ice}"
+                                       Grid.Column="9"/>
+                                <Image Source="dragon16.png"
+                                       Grid.Column="10"
+                                       />
+                                <Label Text="{Binding dragon}"
+                                       Grid.Column="11"/>
+                            </Grid>
                             <!--Skills-->
                             <Grid IsVisible="{Binding att1,  Converter={StaticResource StringToBool}}"
                                   >
@@ -86,47 +133,7 @@
                                        Margin="10,0,0,0"
                                        />
                             </Grid>
-                            <!--Stats-->
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <Image Source="defense.png"
-                                       Grid.Column="0"/>
-                                <Label Text="{Binding defense}"
-                                       Grid.Column="1"/>
-                                <Image Source="fire.png"
-                                       Grid.Column="2"/>
-                                <Label Text="{Binding fire}"
-                                       Grid.Column="3"/>
-                                <Image Source="water.png"
-                                       Grid.Column="4"/>
-                                <Label Text="{Binding water}"
-                                       Grid.Column="5"/>
-                                <Image Source="thunder.png"
-                                       Grid.Column="6"/>
-                                <Label Text="{Binding thunder}"
-                                       Grid.Column="7"/>
-                                <Image Source="ice.png"
-                                       Grid.Column="8"/>
-                                <Label Text="{Binding ice}"
-                                       Grid.Column="9"/>
-                                <Image Source="dragon.png"
-                                       Grid.Column="10"/>
-                                <Label Text="{Binding dragon}"
-                                       Grid.Column="11"/>
-                            </Grid>
+                           
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

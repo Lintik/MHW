@@ -24,6 +24,15 @@ namespace MHW.Model
         public int mat3count { get; set; }
         public string mat4 { get; set; }
         public int mat4count { get; set; }
+
+        
+        public int rank { get; set; }
+        public int def { get; set; }
+        public int fire { get; set; }
+        public int water { get; set; }
+        public int thunder { get; set; }
+        public int ice { get; set; }
+        public int dragon { get; set; }
     }
 
     public class ArmorSet
