@@ -85,11 +85,13 @@ namespace MHW.Model
                 string att2 = armor.att2;
                 int att2lvl = armor.att2lvl;
 
-                if (EquippedSkills.ContainsKey(att1) && att1 != null && att1lvl != 0) EquippedSkills[att1] += att1lvl;
-                else if (att1 != null && att1lvl != 0)EquippedSkills.Add(att1, att1lvl);
+                if(att1 != null && att1lvl != 0)
+                    if (EquippedSkills.ContainsKey(att1)) EquippedSkills[att1] += att1lvl;
+                    else EquippedSkills.Add(att1, att1lvl);
 
-                if (EquippedSkills.ContainsKey(att2) && att2 != null && att2lvl != 0) EquippedSkills[att2] += att2lvl;
-                else if (att2 != null && att2lvl != 0) EquippedSkills.Add(att2, att2lvl);
+                if(att2 != null && att2lvl != 0)
+                    if (EquippedSkills.ContainsKey(att2)) EquippedSkills[att2] += att2lvl;
+                    else EquippedSkills.Add(att2, att2lvl);
             }
 
             UpdateSkillList();
