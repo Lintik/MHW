@@ -12,7 +12,11 @@
             <local:IntColorConverter x:Key="IntToColor" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Sort" Icon="ic_more_vert_black_18dp.png" Activated="SortBy" />
+    </ContentPage.ToolbarItems>
+
     <StackLayout>
         <SearchBar x:Name="MainSearchBar" 
                    TextChanged="TextChangedMHWDB"

@@ -16,6 +16,11 @@ namespace MHW
             InitializeComponent();
         }
 
+        private void SortBy()
+        {
+
+        }
+
         //Search database on button pressed
         private void SearchMHWDB(object sender, EventArgs e)
         {
