@@ -9,6 +9,7 @@
         <ResourceDictionary>
             <local:StringNullOrEmptyBoolConverter x:Key="StringToBool" />
             <local:IntBoolConverter x:Key="IntToBool" />
+            <local:IntColorConverter x:Key="IntToColor" />
         </ResourceDictionary>
     </ContentPage.Resources>
     
@@ -44,36 +45,66 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Source="defense.png"
+                                <Label Text="Def:"
+                                       TextColor="Black"
                                        Grid.Column="0"
-                                       />
+                                       FontAttributes="Bold"/>
+                                <!--<Image Source="defense.png"
+                                       Grid.Column="0"
+                                       />-->
                                 <Label Text="{Binding def}"
-                                       Grid.Column="1"/>
-                                <Image Source="fire16.png"
+                                       Grid.Column="1"
+                                       />
+                                <Label Text="F:"
+                                       TextColor="Black"
                                        Grid.Column="2"
-                                       />
+                                       FontAttributes="Bold"/>
+                                <!--<Image Source="fire16.png"
+                                       Grid.Column="2"
+                                       />-->
                                 <Label Text="{Binding fire}"
-                                       Grid.Column="3"/>
-                                <Image Source="water16.png"
+                                       Grid.Column="3"
+                                       TextColor="{Binding fire, Converter={StaticResource IntToColor}}"/>
+                                <Label Text="W:"
+                                       TextColor="Black"
                                        Grid.Column="4"
-                                       />
+                                       FontAttributes="Bold"/>
+                                <!--<Image Source="water16.png"
+                                       Grid.Column="4"
+                                       />-->
                                 <Label Text="{Binding water}"
-                                       Grid.Column="5"/>
-                                <Image Source="thunder16.png"
+                                       Grid.Column="5"
+                                       TextColor="{Binding water, Converter={StaticResource IntToColor}}"/>
+                                <Label Text="T:"
+                                       TextColor="Black"
                                        Grid.Column="6"
-                                       />
+                                       FontAttributes="Bold"/>
+                                <!--<Image Source="thunder16.png"
+                                       Grid.Column="6"
+                                       />-->
                                 <Label Text="{Binding thunder}"
-                                       Grid.Column="7"/>
-                                <Image Source="ice16.png"
+                                       Grid.Column="7"
+                                       TextColor="{Binding thunder, Converter={StaticResource IntToColor}}"/>
+                                <Label Text="I:"
+                                       TextColor="Black"
                                        Grid.Column="8"
-                                       />
+                                       FontAttributes="Bold"/>
+                                <!--<Image Source="ice16.png"
+                                       Grid.Column="8"
+                                       />-->
                                 <Label Text="{Binding ice}"
-                                       Grid.Column="9"/>
-                                <Image Source="dragon16.png"
+                                       Grid.Column="9"
+                                       TextColor="{Binding ice, Converter={StaticResource IntToColor}}"/>
+                                <Label Text="D:"
+                                       TextColor="Black"
                                        Grid.Column="10"
-                                       />
+                                       FontAttributes="Bold"/>
+                                <!--<Image Source="dragon16.png"
+                                       Grid.Column="10"
+                                       />-->
                                 <Label Text="{Binding dragon}"
-                                       Grid.Column="11"/>
+                                       Grid.Column="11"
+                                       TextColor="{Binding dragon, Converter={StaticResource IntToColor}}"/>
                             </Grid>
                             <!--Skills-->
                             <Grid IsVisible="{Binding att1,  Converter={StaticResource StringToBool}}"
