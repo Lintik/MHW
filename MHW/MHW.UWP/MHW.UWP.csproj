@@ -120,6 +120,7 @@
     <Content Include="Assets\ice.png" />
     <Content Include="Assets\ice16.png" />
     <Content Include="Assets\mhw_arm_gauntlets_wiki.png" />
+    <Content Include="Assets\mhw_attack.png" />
     <Content Include="Assets\mhw_charms_wiki.png" />
     <Content Include="Assets\mhw_feet_boots_greaves_wiki.png" />
     <Content Include="Assets\mhw_helm_headgear_wiki.png" />

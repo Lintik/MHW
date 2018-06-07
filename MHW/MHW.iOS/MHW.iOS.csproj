@@ -195,4 +195,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\defense16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mhw_attack.png" />
+  </ItemGroup>
 </Project>

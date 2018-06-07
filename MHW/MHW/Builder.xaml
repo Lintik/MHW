@@ -16,6 +16,7 @@
             <SearchBar x:Name="ToBeSearch" 
                        Placeholder="Search Equipment"
                        SearchButtonPressed="SearchMHWDB"
+                       HeightRequest="40"
                        />
         </Grid>
 
@@ -48,27 +49,25 @@
                          Margin="10,0,0,0">
 
                 <Label Text="Equipment"
-                       XAlign="Center"
                        Font="16"
                        FontAttributes="Bold"
+                       Margin="40,0,0,0"
                        />
                 <!--Weapon-->
-                <Grid>
+                <Grid Margin="18,0,0,0">
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Label Text="Weapon:"
-                           FontSize="Small"
-                           Grid.Column="0"
-                       />
+                    <Image Grid.Column="0"
+                           Source="mhw_attack.png"/>
                     <Label x:Name="Weapon"
                            FontSize="Small"
                            Grid.Column="1"
                        />
                 </Grid>
                 <!--Head-->
-                <Grid>
+                <Grid Margin="20,0,0,0">
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -82,7 +81,7 @@
                        />
                 </Grid>
                 <!--Body-->
-                <Grid>
+                <Grid Margin="20,0,0,0">
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -96,7 +95,7 @@
                        />
                 </Grid>
                 <!--Arms-->
-                <Grid>
+                <Grid  Margin="20,0,0,0">
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -110,7 +109,7 @@
                        />
                 </Grid>
                 <!--Waist-->
-                <Grid>
+                <Grid  Margin="20,0,0,0">
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -124,7 +123,7 @@
                        />
                 </Grid>
                 <!--Legs-->
-                <Grid>
+                <Grid  Margin="20,0,0,0">
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -139,7 +138,9 @@
                 </Grid>
                 <!--Slots-->
                 <Label Text="Slots"
-                       XAlign="Center"
+                       Font="16"
+                       FontAttributes="Bold"
+                       Margin="40,0,0,0"
                        />
                 <Grid>
                     <Grid.ColumnDefinitions >
@@ -150,32 +151,32 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions >
-                    <Label Text="&lt;&gt;:"
-                           FontSize="Small"
+
+                    <Image Source="gem_level_1.png"
                            Grid.Column="0"
-                       />
+                           Margin="20,0,0,0"/>
+                    
                     <Label x:Name="Size1"
                            Text="0"
                            FontSize="Small"
                            Grid.Column="1"
+                           Margin="0,5,0,0"
                        />
-                    <Label Text="&lt;-&gt;:"
-                           FontSize="Small"
-                           Grid.Column="2"
-                       />
+                    <Image Source="gem_level_2.png"
+                           Grid.Column="2"/>
                     <Label x:Name="Size2"
                            Text="0"
                            FontSize="Small"
                            Grid.Column="3"
+                           Margin="0,5,0,0"
                        />
-                    <Label Text="&lt;--&gt;:"
-                           FontSize="Small"
-                           Grid.Column="4"
-                       />
+                    <Image Source="gem_level_3.png"
+                           Grid.Column="4"/>
                     <Label x:Name="Size3"
                            Text="0"
                            FontSize="Small"
                            Grid.Column="5"
+                           Margin="0,5,0,0"
                        />
                 </Grid>
             </StackLayout>

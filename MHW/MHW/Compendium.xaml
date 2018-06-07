@@ -15,7 +15,8 @@
     <StackLayout>
         <SearchBar x:Name="MainSearchBar" 
                    TextChanged="TextChangedMHWDB"
-                   SearchButtonPressed="SearchMHWDB"/>
+                   SearchButtonPressed="SearchMHWDB"
+                   HeightRequest="40"/>
         <ListView x:Name="MHWDBListView"
                   HasUnevenRows="True">
             <ListView.ItemTemplate>
