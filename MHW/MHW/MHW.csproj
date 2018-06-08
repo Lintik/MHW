@@ -13,6 +13,9 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
+    <Compile Update="MainMenuMenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
@@ -23,6 +26,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Compendium.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainMenuDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailPage1Master.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

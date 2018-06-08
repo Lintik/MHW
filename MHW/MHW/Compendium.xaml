@@ -14,7 +14,7 @@
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="Sort" Icon="ic_more_vert_black_18dp.png" Activated="SortBy" />
+        <ToolbarItem Name="Sort" Icon="ic_more_vert_white_18dp.png" Activated="SortBy" />
     </ContentPage.ToolbarItems>
 
     <StackLayout>

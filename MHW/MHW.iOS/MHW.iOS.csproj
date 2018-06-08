@@ -201,4 +201,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_more_vert_black_18dp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_more_vert_white_18dp.png" />
+  </ItemGroup>
 </Project>
