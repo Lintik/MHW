@@ -4,10 +4,12 @@ using System.Linq;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 using SQLite;
+
 using MHW.Model;
 
-namespace MHW
+namespace MHW.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Builder : ContentPage

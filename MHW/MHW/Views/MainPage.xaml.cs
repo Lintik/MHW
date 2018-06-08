@@ -8,7 +8,7 @@ using Xamarin.Forms;
 using SQLite;
 using MHW.Model;
 
-namespace MHW
+namespace MHW.Views
 {
 	public partial class MainPage : ContentPage
 	{

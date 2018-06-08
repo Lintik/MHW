@@ -6,6 +6,7 @@ using System.Text;
 using Xamarin.Forms;
 using SQLite;
 using System.Diagnostics;
+using MHW.Views;
 
 namespace MHW
 {

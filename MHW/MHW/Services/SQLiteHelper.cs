@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using SQLite;
 using MHW.Model;
 
-namespace MHW
+namespace MHW.Services
 {
     public class SQLiteHelper
     {
