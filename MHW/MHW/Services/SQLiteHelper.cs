@@ -11,13 +11,22 @@ namespace MHW.Services
 {
     public class SQLiteHelper
     {
-        public static List<Armor> SearchKeywords(string keyword)
+        public static List<EquipmentType> SearchKeyWords(string keyword)
         {
-            List<String> keywords = new List<string>();
-            if (keyword != null)
-                keywords = keyword.Split(' ').ToList();
+            string query = "select * from EquipmentType where lower(name) like \'%" + keyword + "%\'";
+            using (var conn = new SQLiteConnection(App.DBPath))
+            {
+                conn.CreateTable<EquipmentType>();
 
-            String query = "select * from Armor where lower(name) like \'%" + keyword + "%\'"
+                var equip = conn.Query<EquipmentType>(query).ToList();
+                return equip;
+            }
+        }
+
+        public static List<Armor> SearchArmor(string keyword)
+        {
+
+            string query = "select * from Armor where lower(name) like \'%" + keyword + "%\'"
                             + " UNION select * from Armor where lower(att1) like \'%" + keyword + "%\'"
                             + " UNION select * from Armor where lower(att2) like \'%" + keyword + "%\'";
 
@@ -29,6 +38,18 @@ namespace MHW.Services
                 return equip;
             }
 
+        }
+
+        public static List<Weapon> SearchWeapon(string keyword)
+        {
+            string query = "select * from Weapon where lower(name) like \'%" + keyword + "%\'";
+            using (var conn = new SQLiteConnection(App.DBPath))
+            {
+                conn.CreateTable<Weapon>();
+
+                var equip = conn.Query<Weapon>(query).ToList();
+                return equip;
+            }
         }
     }
 }

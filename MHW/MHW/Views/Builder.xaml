@@ -200,7 +200,7 @@
             </Grid>
         </Grid>
         <!--Calculations-->
-        <BoxView BackgroundColor="LightBlue" Grid.Row="3"/>
+        
 
     </Grid>
 </ContentPage>
