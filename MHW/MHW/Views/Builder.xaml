@@ -26,8 +26,8 @@
                     x:Name="ToBeEquip"
                     VerticalOptions="CenterAndExpand"
                     SelectedIndexChanged="EquipSelected"
-                    Margin="20,0,0,20">
-                    
+                    Margin="40,0,20,0">
+
                 <Picker.Items>
                     <x:String>Empty</x:String>
 
