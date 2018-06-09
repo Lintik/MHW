@@ -2,12 +2,12 @@
 
 namespace MHW.Model
 {
-    public class Armor
+    public class Armor : ArmorSet
     {
         [PrimaryKey]
         public int id { get; set; }
         public string name { get; set; }
-        public string armorset { get; set; }
+        public override string armorset { get; set; }
         public string part { get; set; }
         public int slot1 { get; set; }
         public int slot2 { get; set; }
@@ -25,20 +25,12 @@ namespace MHW.Model
         public string mat4 { get; set; }
         public int mat4count { get; set; }
 
-        
-        public int rank { get; set; }
-        public int def { get; set; }
-        public int fire { get; set; }
-        public int water { get; set; }
-        public int thunder { get; set; }
-        public int ice { get; set; }
-        public int dragon { get; set; }
     }
 
     public class ArmorSet
     {
         [PrimaryKey]
-        public string armorset { get; set; }
+        public virtual string armorset { get; set; }
         public int rank { get; set; }
         public int def { get; set; }
         public int fire { get; set; }
