@@ -1,26 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<!--<contentpage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MHW.Views"
-             x:Class="MHW.Views.MainPage">
-    <!-- Navigation Page -->
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Name="MenuItem1" Order="Primary" Text="DB" Priority="0"  />
-        <ToolbarItem Name="MenuItem2" Order="Primary" Text="BD" Priority="1" />
-    </ContentPage.ToolbarItems>
+             xmlns:local="clr-namespace:mhw.views"
+             x:class="mhw.views.mainpage"> 
+    <contentpage.toolbaritems>
+        <toolbaritem name="menuitem1" order="primary" text="db" priority="0"  />
+        <toolbaritem name="menuitem2" order="primary" text="bd" priority="1" />
+    </contentpage.toolbaritems>
 
-    <StackLayout>
-        <Label Text="Current Feature"
-               Font="Bold,20"
-               Margin="20,0,0,0"/>
-        <Label Margin="40,0,0,0"
-               Text="Database(DB) contains armor database &#10;Builder(BD) supports equipping armor"/>
+    <stacklayout>
+        <label text="current feature"
+               font="bold,20"
+               margin="20,0,0,0"/>
+        <label margin="40,0,0,0"
+               text="database(db) contains armor database &#10;builder(bd) supports equipping armor"/>
         
-        <Label Text="Upcoming Feature"
-               Font="Bold,20"
-               Margin="20,0,0,0"/>
-        <Label Margin="40,0,0,0"
-               Text="Build equipment globally &#10;Add Weapon, Charms, and Monster database &#10;Integrate set bonus on builder &#10;Integrate charms on builder"/>
-    </StackLayout>
+        <label text="upcoming feature"
+               font="bold,20"
+               margin="20,0,0,0"/>
+        <label margin="40,0,0,0"
+               text="build equipment globally &#10;add weapon, charms, and monster database &#10;integrate set bonus on builder &#10;integrate charms on builder"/>
+    </stacklayout>
     
-</ContentPage>
+</contentpage>-->
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:mhw.views"
+            x:Class="mhw.views.mainpage">
+    <!-- navigation page -->
+    <TabbedPage.ToolbarItems>
+        <toolbaritem name="menuitem1" order="primary" text="db" priority="0"  />
+        <toolbaritem name="menuitem2" order="primary" text="bd" priority="1" />
+    </TabbedPage.ToolbarItems>
+
+    <TabbedPage.Children>
+        <ContentPage Title="Database">
+            
+        </ContentPage>
+        <ConstentPage Title="Builder">
+            
+        </ConstentPage>
+    </TabbedPage.Children>
+</TabbedPage>
