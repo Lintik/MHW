@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Xamarin.Forms;
-using SQLite;
-using System.Diagnostics;
+using Xamarin.Forms.Xaml;
 using MHW.Views;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace MHW
 {
 	public partial class App : Application
