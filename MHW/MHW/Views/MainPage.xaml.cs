@@ -10,7 +10,7 @@ using MHW.Model;
 
 namespace MHW.Views
 {
-	public partial class MainPage : ContentPage
+	public partial class MainPage : TabbedPage
 	{
 		public MainPage()
 		{
