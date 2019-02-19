@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MHW.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Database : ContentPage
+	public partial class DatabasePage : ContentPage
 	{
-		public Database ()
+		public DatabasePage ()
 		{
 			InitializeComponent ();
 		}
