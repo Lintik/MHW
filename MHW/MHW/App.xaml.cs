@@ -20,7 +20,7 @@ namespace MHW
 
             DBPath = path;
 
-            MainPage = new MHW.Views.MainPage();
+            MainPage = new MainPage();
 
         }
 
@@ -28,7 +28,7 @@ namespace MHW
         {
             InitializeComponent();
 
-            MainPage = new MHW.Views.MainPage();
+            MainPage = new MainPage();
 
         }
 
