@@ -37,8 +37,8 @@
         <ContentPage Title="Database">
             
         </ContentPage>
-        <ConstentPage Title="Builder">
+        <ContentPage Title="Builder">
             
-        </ConstentPage>
+        </ContentPage>
     </TabbedPage.Children>
 </TabbedPage>
