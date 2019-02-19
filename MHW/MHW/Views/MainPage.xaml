@@ -29,8 +29,8 @@
             x:Class="mhw.views.mainpage">
     <!-- navigation page -->
     <TabbedPage.ToolbarItems>
-        <toolbaritem name="menuitem1" order="primary" text="db" priority="0"  />
-        <toolbaritem name="menuitem2" order="primary" text="bd" priority="1" />
+        <ToolbarItem Name="menuitem1" Order="primary" Text="db" Priority="0"  />
+        <ToolbarItem Name="menuitem2" Order="primary" Text="bd" Priority="1" />
     </TabbedPage.ToolbarItems>
 
     <TabbedPage.Children>
