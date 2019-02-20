@@ -3,6 +3,11 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:MHW.Views"
             x:Class="MHW.Views.MainPage">
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Name="MHW" Priority="0" />
+    </TabbedPage.ToolbarItems>
+    
     <TabbedPage.Children>
         <NavigationPage Title="Browse">
             <NavigationPage.Icon>
