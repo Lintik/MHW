@@ -5,30 +5,22 @@
             x:Class="MHW.Views.MainPage">
 
     <TabbedPage.ToolbarItems>
-        <ToolbarItem Name="MHW" Priority="0" />
+        <ToolbarItem Text="MHW" Order="0" />
     </TabbedPage.ToolbarItems>
     
     <TabbedPage.Children>
         <NavigationPage Title="Browse">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
             <x:Arguments>
-                <views:DatabasePage />
+                <views:BrowsePage />
             </x:Arguments>
         </NavigationPage>
 
         <NavigationPage Title="About">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_about.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
             <x:Arguments>
-                <views:BuilderPage />
+                <views:AboutPage />
             </x:Arguments>
         </NavigationPage>
+
+       
     </TabbedPage.Children>
 </TabbedPage>
