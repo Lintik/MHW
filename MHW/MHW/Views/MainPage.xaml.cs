@@ -16,6 +16,13 @@ namespace MHW.Views
 		{
 			InitializeComponent();
 		}
-       
+
+        void GoToEquipmentPage (object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new EquipmentPage());
+        }
+
     }
+
+    
 }
