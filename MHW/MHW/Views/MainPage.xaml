@@ -6,7 +6,7 @@
 
     <TabbedPage.ToolbarItems>
         <ToolbarItem Text="MHW" Order="0" />
-        <ToolbarItem Text="DB" Order="1" Clicked="GoToEquipmentPage"
+        <ToolbarItem Text="DB" Order="1" Clicked="GoToEquipmentPage"/>
     </TabbedPage.ToolbarItems>
     
     <TabbedPage.Children>
