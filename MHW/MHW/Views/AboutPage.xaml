@@ -4,9 +4,9 @@
              x:Class="MHW.Views.AboutPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="A simple app for searching and creating Builds for MHW" />
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
