@@ -5,8 +5,7 @@
             x:Class="MHW.Views.MainPage">
 
     <TabbedPage.ToolbarItems>
-        <ToolbarItem Text="MHW" Order="0" />
-        <ToolbarItem Text="DB" Order="1" Clicked="GoToEquipmentPage"/>
+        <ToolbarItem Text="MHW" Priority="0" />
     </TabbedPage.ToolbarItems>
     
     <TabbedPage.Children>
@@ -22,6 +21,18 @@
             </x:Arguments>
         </NavigationPage>
 
-       
+        <NavigationPage Title="Builder">
+            <x:Arguments>
+                <views:BuilderPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="About">
+            <x:Arguments>
+                <views:DatabasePage />
+            </x:Arguments>
+        </NavigationPage>
+
+
     </TabbedPage.Children>
 </TabbedPage>
