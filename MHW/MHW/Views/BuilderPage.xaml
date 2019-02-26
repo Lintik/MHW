@@ -4,9 +4,11 @@
              x:Class="MHW.Views.BuilderPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Head"/>
+            <Label Text="Body"/>
+            <Label Text="Arms"/>
+            <Label Text="Waist"/>
+            <Label Text="Legs"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
