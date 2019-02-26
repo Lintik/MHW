@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using MasterDetailPageExample.Models;
+using MHW.Models;
 
-namespace MasterDetailPageExample.Views
+namespace MHW.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewItemPage : ContentPage

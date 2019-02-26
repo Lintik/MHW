@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using MasterDetailPageExample.Models;
-using MasterDetailPageExample.Views;
-using MasterDetailPageExample.ViewModels;
+using MHW.Models;
+using MHW.Views;
+using MHW.ViewModels;
 
 namespace MasterDetailPageExample.Views
 {
