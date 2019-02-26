@@ -3,10 +3,10 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using MasterDetailPageExample.Models;
-using MasterDetailPageExample.ViewModels;
+using MHW.Models;
+using MHW.ViewModels;
 
-namespace MasterDetailPageExample.Views
+namespace MHW.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemDetailPage : ContentPage

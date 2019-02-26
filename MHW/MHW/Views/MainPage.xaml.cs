@@ -5,7 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using SQLite;
-using MHW.Model;
+using MHW.Models;
 
 namespace MHW.Views
 {

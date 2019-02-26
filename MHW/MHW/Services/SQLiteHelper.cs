@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using SQLite;
-using MHW.Model;
+using MHW.Models;
 
 namespace MHW.Services
 {

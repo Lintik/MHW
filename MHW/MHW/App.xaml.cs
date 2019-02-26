@@ -17,8 +17,6 @@ namespace MHW
             DBPath = path;
 
             MainPage = new MainPage();
-            //MainPage = new NavigationPage(new MainPage());
-
         }
 
         public App()
@@ -26,8 +24,6 @@ namespace MHW
             InitializeComponent();
 
             MainPage = new MainPage();
-            //MainPage = new NavigationPage(new MainPage());
-
         }
 
         protected override void OnStart ()

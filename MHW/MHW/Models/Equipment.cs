@@ -5,7 +5,7 @@ using System.Linq;
 using SQLite;
 using System.Collections.ObjectModel;
 
-namespace MHW.Model
+namespace MHW.Models
 {
     public class Equipment
     {

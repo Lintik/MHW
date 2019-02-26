@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace MHW.Model
+namespace MHW.Models
 {
     public class EquipmentType
     {

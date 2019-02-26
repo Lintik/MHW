@@ -1,9 +1,10 @@
-﻿using MHW.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+using MHW.Models;
 
 namespace MHW.Views
 {
