@@ -21,6 +21,7 @@ namespace MHW.Views
             {
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                
             };
 
             ListViewMenu.ItemsSource = menuItems;
