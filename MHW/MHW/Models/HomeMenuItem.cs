@@ -7,7 +7,8 @@ namespace MHW.Models
     public enum MenuItemType
     {
         Browse,
-        About
+        About,
+        Database
     }
     public class HomeMenuItem
     {
