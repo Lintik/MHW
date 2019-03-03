@@ -36,6 +36,9 @@ namespace MHW.Views
                     case (int)MenuItemType.Database:
                         MenuPages.Add(id, new NavigationPage(new DatabasePage()));
                         break;
+                    case (int)MenuItemType.Builder:
+                        MenuPages.Add(id, new NavigationPage(new BuilderPage()));
+                        break;
                 }
             }
 

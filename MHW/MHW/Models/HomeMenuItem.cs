@@ -8,7 +8,8 @@ namespace MHW.Models
     {
         Browse,
         About,
-        Database
+        Database,
+        Builder
     }
     public class HomeMenuItem
     {
