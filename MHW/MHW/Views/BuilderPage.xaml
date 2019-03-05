@@ -6,11 +6,15 @@
     
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Weapon"/>
+            <Label Text="Weapon"/>
+            <Label Text="Armor"/>
             <Label Text="Head"/>
             <Label Text="Body"/>
             <Label Text="Arms"/>
             <Label Text="Waist"/>
             <Label Text="Legs"/>
+            <Label Text="Accesorry"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

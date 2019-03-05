@@ -40,6 +40,9 @@
     <EmbeddedResource Update="Views\DatabasePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\EventsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\ItemDetailPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
