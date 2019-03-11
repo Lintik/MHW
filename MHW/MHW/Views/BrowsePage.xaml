@@ -4,9 +4,7 @@
              x:Class="MHW.Views.BrowsePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

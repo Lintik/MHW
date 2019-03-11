@@ -18,6 +18,11 @@ namespace MHW.Views
 		{
 			InitializeComponent ();
 		}
+
+         private void FilterItem_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 
     public class TextChangedBehavior : Behavior<SearchBar>

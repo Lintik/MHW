@@ -6,7 +6,9 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label />
+            <Label Text="Build Armor Set"/>
+            <Label Text="Browse Upcoming Events"/>
+            <Label Text="Search Monster Hunter World Database"/>
         </StackLayout>
     </ContentPage.Content>
     

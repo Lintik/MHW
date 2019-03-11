@@ -4,7 +4,13 @@
              xmlns:Views="clr-namespace:MHW.Views"
              x:Class="MHW.Views.DatabasePage"
              Title="Database">
-            
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Filter" Clicked="FilterItem_Clicked">
+
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <StackLayout>
             <SearchBar x:Name="SearchBar" SearchCommand="{Binding SearchCommand}" SearchCommandParameter="{Binding Text, Source={x:Reference SearchBar}}">
