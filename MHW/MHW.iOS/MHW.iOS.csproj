@@ -126,9 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl">
-      <Version>1.5.166-beta</Version>
+      <Version>1.5.231</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.220655" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -136,77 +136,5 @@
       <Project>{44E3B13D-4566-422F-823B-CA4469187E6E}</Project>
       <Name>MHW</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\gem_level_3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\gem_level_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\gem_level_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\defense.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dragon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\ice.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\thunder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\water.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\fire.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw_charms_wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw_feet_boots_greaves_wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw_waist_belt_wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw_arm_gauntlets_wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw_torso_chest_plate_wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw_helm_headgear_wiki.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\water16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\thunder16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\ice16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\fire16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dragon16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\defense16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\mhw_attack.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\ic_more_vert_black_18dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\ic_more_vert_white_18dp.png" />
   </ItemGroup>
 </Project>
