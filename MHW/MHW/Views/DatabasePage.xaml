@@ -6,6 +6,9 @@
              Title="Database">
 
     <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Search" Icon="" Clicked="">
+            
+        </ToolbarItem>
         <ToolbarItem Text="Expand" Icon="ic_more_vert_white_24dp.png" Clicked="FilterItem_Clicked">
                
         </ToolbarItem>
