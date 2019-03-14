@@ -6,19 +6,13 @@
              Title="Database">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Filter" Clicked="FilterItem_Clicked">
-
+        <ToolbarItem Text="Expand" Icon="ic_more_vert_white_24dp.png" Clicked="FilterItem_Clicked">
+               
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar x:Name="SearchBar" SearchCommand="{Binding SearchCommand}" SearchCommandParameter="{Binding Text, Source={x:Reference SearchBar}}">
-                <SearchBar.Behaviors>
-                    <Views:TextChangedBehavior />
-                </SearchBar.Behaviors>
-            </SearchBar>
-            
             <ListView>
                 
             </ListView>
