@@ -19,10 +19,22 @@ namespace MHW.Views
 			InitializeComponent ();
 		}
 
-         private void FilterItem_Clicked(object sender, EventArgs e)
+         private void Search_Clicked(object sender, EventArgs e)
         {
             
         }
+
+        private void FilterItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Refresh_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 
     public class TextChangedBehavior : Behavior<SearchBar>

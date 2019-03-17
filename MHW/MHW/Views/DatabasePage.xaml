@@ -6,11 +6,18 @@
              Title="Database">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Search" Icon="" Clicked="">
+        <ToolbarItem Text="Search" Icon="ic_search_white_24dp.png" Clicked="Search_Clicked">
             
         </ToolbarItem>
-        <ToolbarItem Text="Expand" Icon="ic_more_vert_white_24dp.png" Clicked="FilterItem_Clicked">
-               
+
+        <ToolbarItem Text="Filter Search" Order="Secondary" Clicked="FilterItem_Clicked">
+
+        </ToolbarItem>
+        <ToolbarItem Text="Settings" Order="Secondary" Clicked="Settings_Clicked">
+            
+        </ToolbarItem>
+        <ToolbarItem Text="Refresh" Order="Secondary" Clicked="Refresh_Clicked">
+            
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 
