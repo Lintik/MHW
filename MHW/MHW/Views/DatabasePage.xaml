@@ -13,11 +13,11 @@
         <ToolbarItem Text="Filter Search" Order="Secondary" Clicked="FilterItem_Clicked">
 
         </ToolbarItem>
-        <ToolbarItem Text="Settings" Order="Secondary" Clicked="Settings_Clicked">
-            
-        </ToolbarItem>
         <ToolbarItem Text="Refresh" Order="Secondary" Clicked="Refresh_Clicked">
             
+        </ToolbarItem>
+        <ToolbarItem Text="Settings" Order="Secondary" Clicked="Settings_Clicked">
+
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 

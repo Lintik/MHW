@@ -34,6 +34,10 @@ namespace MHW.Views
 
         }
 
+        private void Settings_Clicked(object sender, EventArgs e)
+        {
+
+        }
 
     }
 

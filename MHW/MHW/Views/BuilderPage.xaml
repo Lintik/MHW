@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MHW.Views.BuilderPage"
              Title="Builder">
+
+    <ContentPage.ToolbarItems>
+        
+    </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
         <StackLayout>
