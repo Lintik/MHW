@@ -5,7 +5,16 @@
              Title="Builder">
 
     <ContentPage.ToolbarItems>
-        
+        <ToolbarItem Text="Search" Icon="ic_search_white_24dp.png" Clicked="Search_Clicked">
+
+        </ToolbarItem>
+
+        <ToolbarItem Text="Filter Search" Order="Secondary" Clicked="FilterItem_Clicked">
+
+        </ToolbarItem>
+        <ToolbarItem Text="Settings" Order="Secondary" Clicked="Settings_Clicked">
+            
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>

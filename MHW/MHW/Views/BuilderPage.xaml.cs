@@ -16,5 +16,15 @@ namespace MHW.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void FilterSearch_Clicked(Object Sender, EventArgs e)
+        {
+
+        }
+
+        private void Settings_Clicked(Object Sender, EventArgs e)
+        {
+
+        }
+    }
 }
